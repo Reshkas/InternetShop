@@ -1,0 +1,10 @@
+/.idea/dictionaries
+/.idea/inspectionProfiles
+/.idea/libraries
+/.idea/*.xml
+*.iml
+/target
+/.settings
+/.vscode
+.classpath
+.project

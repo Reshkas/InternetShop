@@ -1,0 +1,191 @@
+
+body {
+    margin: 0px auto;
+}
+a{
+    text-decoration: none;
+}
+
+input{
+    border: 1px solid grey;
+    border-radius: 10px;
+    padding: 3px 10px;
+
+}
+
+.wrapper{
+    height: auto;
+    width: 1024px;
+    margin:0 auto;
+    background-color: white;
+    display: table;
+}
+
+#header{
+    width: 100%;
+    height: 100px;
+    padding-top: 20px;
+    display: table-row;
+}
+
+.logo{
+    width: 30%;
+}
+
+.logo img{
+    width: 200px;
+    height: 100px;
+}
+
+.search{
+    width: 50%;
+}
+
+.search input{
+    margin-top: 40px;
+}
+
+.entry{
+    width: 10%;
+}
+.entry img{
+    width: 100px;
+    height:100px;
+}
+
+.basket{
+    width: 10%;
+}
+.basket img{
+    width: 100px;
+    height:100px;
+}
+
+.header{
+    display: inline-block;
+    float: left;
+}
+
+.reset {
+    clear: left;
+}
+
+.menu{
+    padding: 0;
+    margin: 10px 0;
+    background: #d4dedf;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.ul_menu {
+
+    display: flex;
+    position: relative;
+    left: 50%;
+    width: 50%;
+}
+
+.li_menu{
+    display:inline-flex;
+    height: 40px;
+    position: relative;
+    left: -50%;
+}
+
+.li_menu a{
+    display: block;
+    padding: 10px 20px;
+    color: #0088cc;
+    font-size: 18px;
+}
+
+.li_menu a:hover{
+    display: block;
+    background-color: cadetblue;
+    color: aliceblue;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font-style: italic;
+}
+
+#main{
+    height: auto;
+    width: 1022px;
+    margin-bottom: 10px;
+    display: table;
+    border: 1px dotted black;
+    background: #f3f3f3;
+
+}
+
+.main_category{
+    display: table-cell;
+    width: 195px;
+    float:left;
+}
+
+.caption{
+    margin: 5px;
+}
+
+.caption p{
+    text-align: center;
+}
+
+.category-menu {
+    width: 180px;
+    margin: 0 10px;
+    padding: 0;
+    list-style: none;
+}
+
+.category-menu a {
+    display: block;
+    margin-bottom: -1px;
+    padding: 8px 14px;
+    text-decoration: none;
+    color: #0088cc;
+    border: 1px solid #e5e5e5;
+}
+
+.category-menu a:hover {
+    background: white;
+}
+
+.category-menu > li {
+    position: relative;
+}
+
+/* Подменю */
+
+.category-menu .sub-menu {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background: white;
+    display: none;
+}
+
+.category-menu li:hover ul{
+    display: block;
+    left: 180px;
+    top: 0;
+}
+
+.main_content{
+    height: 600px;
+    width: 812px;
+    display: table-cell;
+    float: right;
+    border-left: 1px dotted black;
+}
+
+#footer {
+    width: 1024px;
+    height: 40px;
+    display: table-row;
+    background: #d4dedf;
+    margin-top:5px;
+}
