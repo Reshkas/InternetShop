@@ -1,0 +1,273 @@
+/*******************
+SELECTION STYLING
+*******************/
+
+::selection {
+    color: #fff;
+    background: #f676b2; /* Safari */
+}
+::-moz-selection {
+    color: #fff;
+    background: #f676b2; /* Firefox */
+}
+
+/*******************
+BODY STYLING
+*******************/
+
+* {
+    margin: 0;
+    /*padding: 0;*/
+    border: 0;
+}
+
+body {
+
+    font-weight:300;
+    text-align: left;
+    text-decoration: none;
+}
+
+#wrapper {
+    /* Center wrapper perfectly */
+    width: 350px;
+    height: 400px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -175px;
+    margin-top: -200px;
+}
+
+/**REGISTRATION FORM **/
+
+
+.form {
+    width: 350px;
+    margin: 0 auto;
+    position: relative;
+    z-index:5;
+
+    background: #f3f3f3;
+    border: 1px solid #fff;
+    border-radius: 5px;
+
+    box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+}
+
+/**HEADER**/
+
+.form .header {
+    padding: 20px 30px 20px 30px;
+}
+
+.form .header h1 {
+    font-family: 'Bree Serif', serif;
+    font-weight: 300;
+    font-size: 28px;
+    line-height:34px;
+    color: #414848;
+    text-shadow: 1px 1px 0 rgba(256,256,256,1.0);
+    margin-bottom: 10px;
+}
+
+.form .header span {
+    font-size: 11px;
+    line-height: 16px;
+    color: #678889;
+    text-shadow: 1px 1px 0 rgba(256,256,256,1.0);
+}
+
+/** CONTENT **/
+
+.form .content {
+    padding: 0 30px 15px 30px;
+    float:left;
+}
+
+/* Input field */
+label {
+    float:left;
+    padding-top: 12px;
+}
+
+.form .content .field{
+    width: 290px;
+    margin-top: 10px;
+    text-align:right;
+
+}
+
+.form .content .input {
+    width: 200px;
+    padding: 10px 15px;
+
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #9d9e9e;
+    text-shadow: 1px 1px 0 rgba(256,256,256,1.0);
+
+    background: #fff;
+    border: 1px solid #fff;
+    border-radius: 5px;
+
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.50);
+    -moz-box-shadow: inset 0 1px 3px rgba(0,0,0,0.50);
+    -webkit-box-shadow: inset 0 1px 3px rgba(0,0,0,0.50);
+}
+
+.form .content .input:hover {
+    background: #dfe9ec;
+    color: #414848;
+}
+
+.form .content .input:focus {
+    background: #dfe9ec;
+    color: #414848;
+
+    box-shadow: inset 0 1px 2px rgba(0,0,0,0.25);
+    -moz-box-shadow: inset 0 1px 2px rgba(0,0,0,0.25);
+    -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,0.25);
+}
+
+/* Animation */
+.input, .button_right, .button_left {
+    transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    outline:none;
+}
+
+/** FOOTER **/
+
+.form .footer {
+    padding: 20px 30px 20px 30px;
+    overflow: auto;
+
+    background: #d4dedf;
+    border-top: 1px solid #fff;
+
+    box-shadow: inset 0 1px 0 rgba(0,0,0,0.15);
+    -moz-box-shadow: inset 0 1px 0 rgba(0,0,0,0.15);
+    -webkit-box-shadow: inset 0 1px 0 rgba(0,0,0,0.15);
+}
+
+/* Login button */
+.form .footer .button_right {
+    float:right;
+    padding: 11px 25px;
+
+    font-family: 'Bree Serif', serif;
+    font-weight: 300;
+    font-size: 18px;
+    color: #fff;
+    text-shadow: 0px 1px 0 rgba(0,0,0,0.25);
+
+    background: #56c2e1;
+    border: 1px solid #46b3d3;
+    border-radius: 5px;
+    cursor: pointer;
+
+    box-shadow: inset 0 0 2px rgba(256,256,256,0.75);
+    -moz-box-shadow: inset 0 0 2px rgba(256,256,256,0.75);
+    -webkit-box-shadow: inset 0 0 2px rgba(256,256,256,0.75);
+}
+
+.form .footer .button_right:hover {
+    background: #3f9db8;
+    border: 1px solid rgba(256,256,256,0.75);
+
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.5);
+    -moz-box-shadow: inset 0 1px 3px rgba(0,0,0,0.5);
+    -webkit-box-shadow: inset 0 1px 3px rgba(0,0,0,0.5);
+}
+
+.form .footer .button_right:focus {
+    position: relative;
+    bottom: -1px;
+
+    background: #56c2e1;
+
+    box-shadow: inset 0 1px 6px rgba(256,256,256,0.75);
+    -moz-box-shadow: inset 0 1px 6px rgba(256,256,256,0.75);
+    -webkit-box-shadow: inset 0 1px 6px rgba(256,256,256,0.75);
+}
+
+/* Register button */
+/*.form .footer .button_left {*/
+    /*float:left;*/
+    /*padding: 11px 25px;*/
+
+    /*font-family: 'Bree Serif', serif;*/
+    /*font-weight: 300;*/
+    /*font-size: 18px;*/
+    /*color: #fff;*/
+    /*text-shadow: 0px 1px 0 rgba(0,0,0,0.25);*/
+
+    /*background: #56c2e1;*/
+    /*border: 1px solid #46b3d3;*/
+    /*border-radius: 5px;*/
+    /*cursor: pointer;*/
+
+    /*box-shadow: inset 0 0 2px rgba(256,256,256,0.75);*/
+    /*-moz-box-shadow: inset 0 0 2px rgba(256,256,256,0.75);*/
+    /*-webkit-box-shadow: inset 0 0 2px rgba(256,256,256,0.75);*/
+/*}*/
+
+/*.form .footer .button_left:hover {*/
+    /*background: #3f9db8;*/
+    /*border: 1px solid rgba(256,256,256,0.75);*/
+
+    /*box-shadow: inset 0 1px 3px rgba(0,0,0,0.5);*/
+    /*-moz-box-shadow: inset 0 1px 3px rgba(0,0,0,0.5);*/
+    /*-webkit-box-shadow: inset 0 1px 3px rgba(0,0,0,0.5);*/
+/*}*/
+
+/*.form .footer .button_left:focus {*/
+    /*position: relative;*/
+    /*bottom: -1px;*/
+
+    /*background: #56c2e1;*/
+
+    /*box-shadow: inset 0 1px 6px rgba(256,256,256,0.75);*/
+    /*-moz-box-shadow: inset 0 1px 6px rgba(256,256,256,0.75);*/
+    /*-webkit-box-shadow: inset 0 1px 6px rgba(256,256,256,0.75);*/
+/*}*/
+
+#back .x{
+    float:right;
+    position: relative;
+    z-index: 100;
+    margin-right: -3px;
+
+    font-family: 'Bree Serif', serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: #fff;
+    text-shadow: 0px 1px 0 rgba(0,0,0,0.25);
+
+    background: #56c2e1;
+    border: 1px solid #46b3d3;
+    border-radius: 5px;
+    cursor: pointer;
+
+    box-shadow: inset 0 0 2px rgba(256,256,256,0.75);
+    -moz-box-shadow: inset 0 0 2px rgba(256,256,256,0.75);
+    -webkit-box-shadow: inset 0 0 2px rgba(256,256,256,0.75);
+}
+#back .x:hover{
+    position: relative;
+    z-index: 100;
+    margin-right: -3px;
+
+    background: #3f9db8;
+
+    box-shadow: inset 0 1px 6px rgba(256,256,256,0.75);
+    -moz-box-shadow: inset 0 1px 6px rgba(256,256,256,0.75);
+    -webkit-box-shadow: inset 0 1px 6px rgba(256,256,256,0.75);
+}

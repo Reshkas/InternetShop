@@ -1,0 +1,48 @@
+#header{
+    width: 100%;
+    height: 100px;
+    padding-top: 20px;
+    display: table-row;
+}
+
+.logo{
+    width: 30%;
+}
+
+.logo img{
+    width: 200px;
+    height: 100px;
+}
+
+.search{
+    width: 50%;
+}
+
+.search input{
+    margin-top: 40px;
+}
+
+.entry{
+    width: 10%;
+}
+.entry img{
+    width: 100px;
+    height:100px;
+}
+
+.basket{
+    width: 10%;
+}
+.basket img{
+    width: 100px;
+    height:100px;
+}
+
+.header{
+    display: inline-block;
+    float: left;
+}
+
+.reset {
+    clear: left;
+}

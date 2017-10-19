@@ -1,0 +1,14 @@
+CREATE TABLE IF NOT EXISTS users (
+  id SERIAL NOT NULL,
+  login VARCHAR(64)PRIMARY KEY,
+  password VARCHAR(64)NOT NULL ,
+  role VARCHAR(20)NOT NULL
+);
+
+INSERT INTO users VALUES
+  (DEFAULT,'login1','7c6a180b36896a0a8c02787eeafb0e4c', 'ADMIN'),
+  (DEFAULT,'login2','6cb75f652a9b52798eb6cf2201057c73', 'CUSTOMER'),
+  (DEFAULT,'login3','819b0643d6b89dc9b579fdfc9094f28e', 'ADMIN'),
+  (DEFAULT,'login4','34cc93ece0ba9e3f6f235d4af979b16c', 'MANAGER'),
+  (DEFAULT,'login5','db0edd04aaac4506f7edab03ac855d56', 'MANAGER'),
+  (DEFAULT,'login6','db0edd04aaac4506f7edab03ac855d56', 'MANAGER');

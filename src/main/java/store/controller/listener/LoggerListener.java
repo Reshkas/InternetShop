@@ -13,7 +13,6 @@ public class LoggerListener implements ServletRequestListener {
 
     private static final Logger LOG = LoggerFactory.getLogger(LoggerListener.class);
 
-
     @Override
     public void requestDestroyed(ServletRequestEvent servletRequestEvent) {
 
@@ -24,15 +23,6 @@ public class LoggerListener implements ServletRequestListener {
 
         HttpServletRequest req = (HttpServletRequest) sre.getServletRequest();
 
-        switch (req.getMethod()) {
-            case "POST":
-                LOG.info("Пришел {} запрос с параметрами: {}", req.getMethod(), req.getParameterMap());
-                break;
-            case "GET":
-                LOG.info("Пришел {} запрос", req.getMethod());
-                break;
-            default:
-                LOG.debug("{}: {}", req.getMethod(), req.getRequestURI());
-        }
+        LOG.info("Пришел {} запрос с параметрами: {}", req.getMethod(), req.getParameterMap());
     }
 }
